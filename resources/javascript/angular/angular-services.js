@@ -5,7 +5,7 @@
  */
 angular.module('testExample').service('DataEngine', ['$http', function($http){
 	this.webServiceEndpoints = {
-		testWebService: 'test_web_service.php'
+		testWebService: window.atlasDistTestConfig.params.dataAccessLayerEndpoint // Sent into config file from backend where endpoints and config are properly maintained, possibly from db in future if required...
 	}
 	/**
 	 * getExampleTableData
