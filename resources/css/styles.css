@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.ng-table-pager {
+    display: none;
+}
+
+.example-test--table {
+	margin-top: 50px;
+	text-align: left;
+	border: 1px #ccc solid;
+	transition: box-shadow 200ms ease;
+}
+
+.example-test--table:hover {
+	box-shadow: -2px 0px 3pc rgba(0, 0, 0, 0.1);
+}
+
+.example-test--table .ng-table-header {
+	text-align: left;
+	cursor: pointer;
+}
+
+.text-center {
+	text-align: center;
+}

@@ -1,0 +1,12 @@
+<!-- can be reused with any scope or in a directive with isolate scope if needed -->
+<div class="col-12-xs col-6-md">
+	<table class="example-test--table table table-condensed table-striped animated slideInLeft" ng-table="tableParams" class="table">
+	    <tr ng-repeat="user in $data">
+	        <td data-title="'Name'" sortable="'name'">{{ user.name }}</td>
+	        <td data-title="'age'" sortable="'age'">{{ user.age }}</td>
+	        <td data-title="'job_type'" sortable="'job_type'">{{ user.job_type }}</td>
+	        <td data-title="'platforms_used'" sortable="'platforms_used'">{{ user.platforms_used }}</td>
+	        <td data-title="'favorite_tool'" sortable="'favorite_tool'">{{ user.favorite_tool }}</td>
+	    </tr>
+	</table>
+</div>
