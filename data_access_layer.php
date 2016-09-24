@@ -4,7 +4,7 @@
 	* @description Utility for webservice to answer request by string name, safely [sanatize_string();]
 	*  expose [get_static_dataset()] a portion of private data if the call matches a keyname within the data.  
 	*/
-	class DataAccessLayer {
+	class Data_access_layer {
 		
 		// Find only letters, numbers, underscores or dashes
 		private static $VALID_CHARS_ONLY_REGEX = '/[^-a-zA-Z0-9_]/'; 
@@ -100,13 +100,17 @@
 		}		
 	}
 
+$is_webservice_call = isset($_GET["getDataset"]);
 
 
-// Instantiate a new instance of the DAL
-$DAL = new DataAccessLayer;
+if ($is_webservice_call){
 
-// Clean the untrusted get param
-$safe_client_data_req_name = $DAL->sanatize_string($_GET["getDataset"]);
+	// Instantiate a new instance of the DAL
+	$DAL = new Data_access_layer;
 
-// Return the value of 1) the requested data or 2) Throw an error in the event that the request was unsuccessful due to invalid client request
-echo $DAL->get_static_dataset($safe_client_data_req_name);
+	// Clean the untrusted get param
+	$safe_client_data_req_name = $DAL->sanatize_string($_GET["getDataset"]);
+
+	// Return the value of 1) the requested data or 2) Throw an error in the event that the request was unsuccessful due to invalid client request
+	echo $DAL->get_static_dataset($safe_client_data_req_name);
+}
