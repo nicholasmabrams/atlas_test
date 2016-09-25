@@ -11,53 +11,53 @@
 
 		// Static data to populate table on the clientside of demo
 		private static $DATASET = array("testTableData" => 
+									array(
+										array(
+											"name" => "Nick",
+											"age" => 29,
+											"job_type" => "Software Developer",
+											"platforms_used" => "Linux RedHat, Windows 10, Mac El Capitan",
+											"favorite_tool" => "Visual Studio"
+										),
+										array(
+												"name" => "Allie",
+												"age" => 22,
+												"job_type" => "Graphic designer",
+												"platforms_used" => "Mac",
+												"favorite_tool" => "Photoshop"
+											),
+										array(
+												"name" => "Joe",
+												"age" => 31,
+												"job_type" => "Web Developer",
+												"platforms_used" => "Mac",
+												"favorite_tool" => "Sublime Text"	
+											),
+										array(
+												"name" => "George",
+												"age" => 26,
+												"job_type" => "DBA",
+												"platforms_used" => "Windows Server 2012",
+												"favorite_tool" => "SQL Studio"
+											),
+											/**
+											 * I left this because you said 5x5, but if you count the header (thead) row, 
+											 * it would be too many rows to have the the data 5x5. so I commented an object from the       
+											 * array..but just in case, so uncomment this so I dont lose points if you want 5x5 data :)
 											array(
-												array(
-													"name" => "Nick",
-													"age" => 29,
-													"job_type" => "Software Developer",
-													"platforms_used" => "Linux RedHat, Windows 10, Mac El Capitan",
-													"favorite_tool" => "Visual Studio"
-												),
-												array(
-														"name" => "Allie",
-														"age" => 22,
-														"job_type" => "Graphic designer",
-														"platforms_used" => "Mac",
-														"favorite_tool" => "Photoshop"
-													),
-												array(
-														"name" => "Joe",
-														"age" => 31,
-														"job_type" => "Web Developer",
-														"platforms_used" => "Mac",
-														"favorite_tool" => "Sublime Text"	
-													),
-												array(
-														"name" => "George",
-														"age" => 26,
-														"job_type" => "DBA",
-														"platforms_used" => "Windows Server 2012",
-														"favorite_tool" => "SQL Studio"
-													),
-													/**
-													 * I left this because you said 5x5, but if you count the header (thead) row, 
-													 * it would be too many rows to have the the data 5x5. so I commented an object from the       
-													 * array..but just in case, so uncomment this so I dont lose points if you want 5x5 data :)
-													array(
-														"name" => "Bob",
-														"age" => 19,
-														"job_type" => "Systems Engineer",
-														"platforms_used" => "Linux",
-														"favorite_tool" => "Linux Cali/Backtrack"
-													)
-													 */
+												"name" => "Bob",
+												"age" => 19,
+												"job_type" => "Systems Engineer",
+												"platforms_used" => "Linux",
+												"favorite_tool" => "Linux Cali/Backtrack"
 											)
+											 */
+									)
 
-							/**
-							 * Extend here with new static data for this fake web service
-							 * EG: "newDataset" => array(...)
-							 */
+								/**
+								 * Extend here with new static data for this fake web service
+								 * EG: "newDataset" => array(...)
+								 */
 					);
 
 	   /**
