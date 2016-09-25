@@ -1,5 +1,9 @@
 <?php 
-define("REL_PATH", "/test");
+/**
+ * Configure this to match the subdirectory if you decide to place this on 
+ * your servers any place but the name of this folder (test) define("REL_PATH", ""); for in root dir
+ */
+define("REL_PATH", "/atlas_test");
 
 $atlas_example_config = array(
 
@@ -7,7 +11,8 @@ $atlas_example_config = array(
 
 		"encoding" => "UTF-8",
 
-		"endpoints" => array("data_access_layer_endpoint" => REL_PATH."/data_access_layer.php"),
+		"endpoints" => array("data_access_layer_endpoint" => REL_PATH."/data_access_layer.php",
+							 "angular_template_url" => REL_PATH."/resources/angular-directives/test-example-template.html"),
 
 		"stylesheets" => array("ng_table_css_styles"=> "http://cdn.rawgit.com/esvit/ng-table/1.0.0/dist/ng-table.min.css",
 							   "animate_css_styles" => "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css", 

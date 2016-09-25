@@ -4,6 +4,6 @@
 angular.module('testExample').directive('atlasDistDemo', function(){
 	return {
 		restrict: 'A',
-		templateUrl: '/test/resources/angular-directives/test-example-template.html'
+		templateUrl: window.atlasDistTestConfig.params.angularTemplateUrl
 	}
 });
