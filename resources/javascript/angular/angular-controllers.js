@@ -9,4 +9,5 @@ angular.module('testExample').controller('testCtrl', ['$scope','NgTableParams', 
 		DataEngine.getExampleTableData('testTableData').then(function(serverRes){
 			$scope.tableParams = new NgTableParams({}, { dataset: serverRes.data });
 		});
+		
 }]);

@@ -14,7 +14,8 @@ $atlas_example_config = array(
 							   "bootstrap_css_styles" => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css",
 							   "application_css_styles" => REL_PATH."/resources/css/styles.css"),
 
-		"lib_scripts" => array("jquery_js" => "https://code.jquery.com/jquery-1.12.4.min.js",
+		"lib_scripts" => array("require_js" => "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js",
+								"jquery_js" => "https://code.jquery.com/jquery-1.12.4.min.js",
 							   "angular_js"=>"http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js",
 							   "ng_table_js" => "http://cdn.rawgit.com/esvit/ng-table/1.0.0/dist/ng-table.js"),
 

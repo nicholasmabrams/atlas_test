@@ -37,7 +37,7 @@
 														"name" => "George",
 														"age" => 26,
 														"job_type" => "DBA",
-														"platforms_used" => "Windows 7",
+														"platforms_used" => "Windows Server 2012",
 														"favorite_tool" => "SQL Studio"
 													),
 													/**
